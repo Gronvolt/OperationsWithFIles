@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingBottom="35dp"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp"
+    android:paddingTop="35dp"
+
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="11pt"
+        android:textColor="#003366"
+        android:text="Работа с внешним носителем."
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnListFiles"
+        android:text="Список файлов"
+        android:onClick="btnListFilesClick"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnCreateFile"
+        android:text="Создать файл"
+        android:onClick="btnCreateFileClick"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnOpenFile"
+        android:text="Открыть файл"
+        android:onClick="btnOpenFileClick"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/etEditFile"
+        android:background="#c2d1f4"
+        android:layout_gravity="left"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:textAllCaps="false"
+        android:id="@+id/btnSaveFile"
+        android:text="Сохранить файл"
+        android:onClick="btnSaveFileClick"
+        />
+
+</LinearLayout>
